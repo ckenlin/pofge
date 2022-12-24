@@ -9,7 +9,7 @@ type_list={'抒情歌曲':{'抒情1','抒情2','抒情3','抒情4','抒情5','�
            '民謠歌曲':{'民謠1','民謠2','民謠3','民謠4','民謠5','民謠6','民謠7','民謠8','民謠9','民謠10'}}
 option_musiclist=st.sidebar.selectbox("選擇類型",type_list)  
 option_music=st.selectbox("選擇音樂",type_list[option_musiclist])
-            audio_file = open(type_list[option_musiclist]+'.mp3', "rb")
+            audio_file = open(option_music+'.mp3', "rb")
             st.audio(audio_file.read())
 
 
