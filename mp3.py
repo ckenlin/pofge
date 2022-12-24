@@ -4,7 +4,7 @@ year_list={'2022','2021','2020','2019','2018'}
 option_year=st.sidebar.selectbox("選擇年度",year_list)
 
 if option_year=='2022':
-           type_list={'抒情歌曲':{'抒情1'},
+           type_list={'抒情歌曲':{'抒情1','抒情2'},
                       '流行歌曲':{'流行1'},
                       '搖滾歌曲':{'搖滾1'},
                       '饒舌歌曲':{'饒舌1'},
